@@ -1,0 +1,416 @@
+/*
+TABLE OF CONTENTS
+*****************
+
+*/
+
+
+section 
+{
+    font-family:blinkerRegular;
+    width:65%;
+    form 
+    {
+        background:$white;
+        border:1px solid transparent;
+        border-radius:7px;
+        margin:25px 0 50px 0;
+        padding:0;
+        .contentForm 
+        {
+            margin:25px 0 25px 0;
+            width:90%;
+            .block 
+            {
+                margin-top:35px;
+                .addMargin
+                {
+                    margin-top:10px;
+                }
+                .alignArea 
+                {
+                    display:inline-block;
+                    width:90%;
+                    .field 
+                    {
+                        background:$field;
+                        border:none;
+                        border-radius:4px;
+                        margin-top:10px;
+                        padding:10px;
+                        width:100%;
+                    }
+                }
+                .fullArea 
+                {
+                    width:100%;
+                }
+                .ratings 
+                {
+                    margin-top:10px;
+                    label 
+                    {
+                        display:block;
+                        width:30px;
+                        .checkbox
+                        {
+                            display:inline;
+                        }
+                        h6 {
+                            display:inline;
+                        }
+                    }
+                }
+                .textareaWidth
+                {
+                    border:1px solid $button;
+                    border-radius:5px;
+                    padding:10px;
+                    width:100%;
+                }
+            }
+            .blockText
+            {
+                margin-top:15px;
+                .infoArea 
+                {
+                    display:inline;
+                }
+            }
+            .blockTextBottom
+            {
+                margin-top:35px;
+                .infoArea 
+                {
+                    display:inline;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px)
+{
+    section 
+    {
+        form 
+        {
+            .contentForm 
+            {
+                .block 
+                {
+                    .fullAreaTop 
+                    {
+                        width:100%;
+                    }
+                }
+                .blockTop 
+                {
+                    padding-top:35px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:800px)
+{
+    section 
+    {
+        width:85%;
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    section 
+    {
+        form 
+        {
+            border:1.25px solid transparent;
+            border-radius:8.7px;
+            margin:31px 0 62px 0;
+            .contentForm 
+            {
+                margin:31px 0 31px 0;
+                .block 
+                {
+                    margin-top:43px;
+                    .addMargin
+                    {
+                        font-size:20px;
+                        margin-top:12.5px;
+                    }
+                    .alignArea 
+                    {
+                        .field 
+                        {
+                            border-radius:5px;
+                            font-size:20px;
+                            margin-top:12.5px;
+                            padding:12.5px;
+                        }
+                    }
+                    .ratings 
+                    {
+                        margin-top:12.5px;
+                        label 
+                        {
+                            width:37px;
+                            .checkbox 
+                            {
+                                height:18px;
+                                width:18px;
+                            }
+                        }
+                    }
+                    .textareaWidth
+                    {
+                        border:1.25px solid $button;
+                        border-radius:6.2px;
+                        font-size:20px;
+                        padding:12.5px;
+                    }
+                }
+                .blockText
+                {
+                    margin-top:18px;
+                    .button {
+                        font-size:20px;
+                    }
+                    .checkboxArea
+                    {
+                        height:18px;
+                        width:18px;
+                    }
+                }
+                .blockTextBottom
+                {
+                    margin-top:43px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    section 
+    {
+        form 
+        {
+            border:1.56px solid transparent;
+            border-radius:10.8px;
+            margin:38px 0 77px 0;
+            .contentForm 
+            {
+                margin:38px 0 38px 0;
+                .block 
+                {
+                    margin-top:53px;
+                    .addMargin
+                    {
+                        font-size:25px;
+                        margin-top:15.6px;
+                    }
+                    .alignArea 
+                    {
+                        .field 
+                        {
+                            border-radius:6.2px;
+                            font-size:25px;
+                            margin-top:15.6px;
+                            padding:15.6px;
+                        }
+                    }
+                    .ratings 
+                    {
+                        margin-top:15.6px;
+                        label 
+                        {
+                            width:46px;
+                            .checkbox 
+                            {
+                                height:22px;
+                                width:22px;
+                            }
+                        }
+                    }
+                    .textareaWidth
+                    {
+                        border:1.56px solid $button;
+                        border-radius:7.7px;
+                        font-size:25px;
+                        padding:15.6px;
+                    }
+                }
+                .blockText
+                {
+                    margin-top:22px;
+                    .button {
+                        font-size:25px;
+                    }
+                    .checkboxArea
+                    {
+                        height:22px;
+                        width:22px;
+                    }
+                }
+                .blockTextBottom
+                {
+                    margin-top:53px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    section 
+    {
+        form 
+        {
+            border:1.95px solid transparent;
+            border-radius:13.5px;
+            margin:47px 0 96px 0;
+            .contentForm 
+            {
+                margin:47px 0 47px 0;
+                .block 
+                {
+                    font-size:31px;
+                    margin-top:66px;
+                    .addMargin
+                    {
+                        margin-top:19.5px;
+                    }
+                    .alignArea 
+                    {
+                        .field 
+                        {
+                            border-radius:7.7px;
+                            font-size:31px;
+                            margin-top:19.5px;
+                            padding:19.5px;
+                        }
+                    }
+                    .ratings 
+                    {
+                        margin-top:19.5px;
+                        label 
+                        {
+                            width:57px;
+                            .checkbox 
+                            {
+                                height:27px;
+                                width:27px;
+                            }
+                        }
+                    }
+                    .textareaWidth
+                    {
+                        border:1.95px solid $button;
+                        border-radius:9.6px;
+                        font-size:31px;
+                        padding:19.5px;
+                    }
+                }
+                .blockText
+                {
+                    margin-top:27px;
+                    .button {
+                        font-size:31px;
+                    }
+                    .checkboxArea
+                    {
+                        height:27px;
+                        width:27px;
+                    }
+                }
+                .blockTextBottom
+                {
+                    margin-top:66px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) 
+{
+    section 
+    {
+        form 
+        {
+            border:2.43px solid transparent;
+            border-radius:16.9px;
+            margin:58px 0 120px 0;
+            .contentForm 
+            {
+                margin:58px 0 58px 0;
+                .block 
+                {
+                    margin-top:82px;
+                    .addMargin
+                    {
+                        font-size:38px;
+                        margin-top:24.4px;
+                    }
+                    .alignArea 
+                    {
+                        .field 
+                        {
+                            border-radius:9.6px;
+                            font-size:38px;
+                            margin-top:24.4px;
+                            padding:24.4px;
+                        }
+                    }
+                    .ratings 
+                    {
+                        margin-top:24.4px;
+                        label 
+                        {
+                            width:71px;
+                            .checkbox 
+                            {
+                                height:33px;
+                                width:33px;
+                            }
+                        }
+                    }
+                    .textareaWidth
+                    {
+                        border:2.44px solid $button;
+                        border-radius:12px;
+                        font-size:38px;
+                        padding:24.4px;
+                    }
+                }
+                .blockText
+                {
+                    margin-top:33px;
+                    .button {
+                        font-size:38px;
+                    }
+                    .checkboxArea
+                    {
+                        height:33px;
+                        width:33px;
+                    }
+                }
+                .blockTextBottom
+                {
+                    margin-top:82px;
+                }
+            }
+        }
+    }
+}

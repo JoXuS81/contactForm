@@ -1,0 +1,402 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+@font-face {
+  font-family: "blinkerRegular";
+  src: url("../../../Fonts/Blinker/Blinker-Regular.ttf");
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body .mainContainer {
+  /*
+TABLE OF CONTENTS
+*****************
+
+*/
+  background: #333333;
+  width: 100vw;
+}
+
+body .mainContainer section {
+  font-family: blinkerRegular;
+  width: 65%;
+}
+
+body .mainContainer section form {
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  margin: 25px 0 50px 0;
+  padding: 0;
+}
+
+body .mainContainer section form .contentForm {
+  margin: 25px 0 25px 0;
+  width: 90%;
+}
+
+body .mainContainer section form .contentForm .block {
+  margin-top: 35px;
+}
+
+body .mainContainer section form .contentForm .block .addMargin {
+  margin-top: 10px;
+}
+
+body .mainContainer section form .contentForm .block .alignArea {
+  display: inline-block;
+  width: 90%;
+}
+
+body .mainContainer section form .contentForm .block .alignArea .field {
+  background: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+body .mainContainer section form .contentForm .block .fullArea {
+  width: 100%;
+}
+
+body .mainContainer section form .contentForm .block .ratings {
+  margin-top: 10px;
+}
+
+body .mainContainer section form .contentForm .block .ratings label {
+  display: block;
+  width: 30px;
+}
+
+body .mainContainer section form .contentForm .block .ratings label .checkbox {
+  display: inline;
+}
+
+body .mainContainer section form .contentForm .block .ratings label h6 {
+  display: inline;
+}
+
+body .mainContainer section form .contentForm .block .textareaWidth {
+  border: 1px solid #7f7f7f;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+body .mainContainer section form .contentForm .blockText {
+  margin-top: 15px;
+}
+
+body .mainContainer section form .contentForm .blockText .infoArea {
+  display: inline;
+}
+
+body .mainContainer section form .contentForm .blockTextBottom {
+  margin-top: 35px;
+}
+
+body .mainContainer section form .contentForm .blockTextBottom .infoArea {
+  display: inline;
+}
+
+@media (max-width: 576px) {
+  body .mainContainer section form .contentForm .block .fullAreaTop {
+    width: 100%;
+  }
+  body .mainContainer section form .contentForm .blockTop {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  body .mainContainer section {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body .mainContainer section form {
+    border: 1.25px solid transparent;
+    border-radius: 8.7px;
+    margin: 31px 0 62px 0;
+  }
+  body .mainContainer section form .contentForm {
+    margin: 31px 0 31px 0;
+  }
+  body .mainContainer section form .contentForm .block {
+    margin-top: 43px;
+  }
+  body .mainContainer section form .contentForm .block .addMargin {
+    font-size: 20px;
+    margin-top: 12.5px;
+  }
+  body .mainContainer section form .contentForm .block .alignArea .field {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 12.5px;
+    padding: 12.5px;
+  }
+  body .mainContainer section form .contentForm .block .ratings {
+    margin-top: 12.5px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label {
+    width: 37px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label .checkbox {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section form .contentForm .block .textareaWidth {
+    border: 1.25px solid #7f7f7f;
+    border-radius: 6.2px;
+    font-size: 20px;
+    padding: 12.5px;
+  }
+  body .mainContainer section form .contentForm .blockText {
+    margin-top: 18px;
+  }
+  body .mainContainer section form .contentForm .blockText .button {
+    font-size: 20px;
+  }
+  body .mainContainer section form .contentForm .blockText .checkboxArea {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section form .contentForm .blockTextBottom {
+    margin-top: 43px;
+  }
+}
+
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body .mainContainer section form {
+    border: 1.56px solid transparent;
+    border-radius: 10.8px;
+    margin: 38px 0 77px 0;
+  }
+  body .mainContainer section form .contentForm {
+    margin: 38px 0 38px 0;
+  }
+  body .mainContainer section form .contentForm .block {
+    margin-top: 53px;
+  }
+  body .mainContainer section form .contentForm .block .addMargin {
+    font-size: 25px;
+    margin-top: 15.6px;
+  }
+  body .mainContainer section form .contentForm .block .alignArea .field {
+    border-radius: 6.2px;
+    font-size: 25px;
+    margin-top: 15.6px;
+    padding: 15.6px;
+  }
+  body .mainContainer section form .contentForm .block .ratings {
+    margin-top: 15.6px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label {
+    width: 46px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label .checkbox {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section form .contentForm .block .textareaWidth {
+    border: 1.56px solid #7f7f7f;
+    border-radius: 7.7px;
+    font-size: 25px;
+    padding: 15.6px;
+  }
+  body .mainContainer section form .contentForm .blockText {
+    margin-top: 22px;
+  }
+  body .mainContainer section form .contentForm .blockText .button {
+    font-size: 25px;
+  }
+  body .mainContainer section form .contentForm .blockText .checkboxArea {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section form .contentForm .blockTextBottom {
+    margin-top: 53px;
+  }
+}
+
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body .mainContainer section form {
+    border: 1.95px solid transparent;
+    border-radius: 13.5px;
+    margin: 47px 0 96px 0;
+  }
+  body .mainContainer section form .contentForm {
+    margin: 47px 0 47px 0;
+  }
+  body .mainContainer section form .contentForm .block {
+    font-size: 31px;
+    margin-top: 66px;
+  }
+  body .mainContainer section form .contentForm .block .addMargin {
+    margin-top: 19.5px;
+  }
+  body .mainContainer section form .contentForm .block .alignArea .field {
+    border-radius: 7.7px;
+    font-size: 31px;
+    margin-top: 19.5px;
+    padding: 19.5px;
+  }
+  body .mainContainer section form .contentForm .block .ratings {
+    margin-top: 19.5px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label {
+    width: 57px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label .checkbox {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section form .contentForm .block .textareaWidth {
+    border: 1.95px solid #7f7f7f;
+    border-radius: 9.6px;
+    font-size: 31px;
+    padding: 19.5px;
+  }
+  body .mainContainer section form .contentForm .blockText {
+    margin-top: 27px;
+  }
+  body .mainContainer section form .contentForm .blockText .button {
+    font-size: 31px;
+  }
+  body .mainContainer section form .contentForm .blockText .checkboxArea {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section form .contentForm .blockTextBottom {
+    margin-top: 66px;
+  }
+}
+
+@media (min-width: 3751px) {
+  body .mainContainer section form {
+    border: 2.43px solid transparent;
+    border-radius: 16.9px;
+    margin: 58px 0 120px 0;
+  }
+  body .mainContainer section form .contentForm {
+    margin: 58px 0 58px 0;
+  }
+  body .mainContainer section form .contentForm .block {
+    margin-top: 82px;
+  }
+  body .mainContainer section form .contentForm .block .addMargin {
+    font-size: 38px;
+    margin-top: 24.4px;
+  }
+  body .mainContainer section form .contentForm .block .alignArea .field {
+    border-radius: 9.6px;
+    font-size: 38px;
+    margin-top: 24.4px;
+    padding: 24.4px;
+  }
+  body .mainContainer section form .contentForm .block .ratings {
+    margin-top: 24.4px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label {
+    width: 71px;
+  }
+  body .mainContainer section form .contentForm .block .ratings label .checkbox {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section form .contentForm .block .textareaWidth {
+    border: 2.44px solid #7f7f7f;
+    border-radius: 12px;
+    font-size: 38px;
+    padding: 24.4px;
+  }
+  body .mainContainer section form .contentForm .blockText {
+    margin-top: 33px;
+  }
+  body .mainContainer section form .contentForm .blockText .button {
+    font-size: 38px;
+  }
+  body .mainContainer section form .contentForm .blockText .checkboxArea {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section form .contentForm .blockTextBottom {
+    margin-top: 82px;
+  }
+}
+
+body .mainContainer h4 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+body .mainContainer h6 {
+  color: #000000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body .mainContainer h4 {
+    font-size: 30px;
+    margin: 62px 0 0 0;
+  }
+  body .mainContainer h6 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body .mainContainer h4 {
+    font-size: 37px;
+    margin: 77px 0 0 0;
+  }
+  body .mainContainer h6 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body .mainContainer h4 {
+    font-size: 46px;
+    margin: 96px 0 0 0;
+  }
+  body .mainContainer h6 {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 3751px) {
+  body .mainContainer h4 {
+    font-size: 57px;
+    margin: 120px 0 0 0;
+  }
+  body .mainContainer h6 {
+    font-size: 38px;
+  }
+}
+/*# sourceMappingURL=styleManager.css.map */

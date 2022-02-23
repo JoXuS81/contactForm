@@ -1,0 +1,192 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+
+
+// FONTS
+// Blinker Regular
+@font-face 
+{
+    font-family:"blinkerRegular";
+    src:url("../../../Fonts/Blinker/Blinker-Regular.ttf");
+}
+
+
+// MIXINS (8 Mixins)
+@mixin h4
+{
+    color:$white;
+    display:inline-block;
+    font-size:24px;
+    margin:50px 0 0 0;
+    padding:0;
+}
+@mixin h6
+{
+    color:$black;
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+
+
+// MIXINS (FOR RESOLUTION 1921 - 2400px)
+@mixin h4_2400
+{
+    font-size:30px;
+    margin:62px 0 0 0;
+}
+@mixin h6_2400
+{
+    font-size:20px;
+}
+
+
+// MIXINS (FOR RESOLUTION 2401 - 3000px)
+@mixin h4_3000
+{
+    font-size:37px;
+    margin:77px 0 0 0;
+}
+@mixin h6_3000
+{
+    font-size:25px;
+}
+
+
+// MIXINS (FOR RESOLUTION 3001 - 3750px)
+@mixin h4_3750
+{
+    font-size:46px;
+    margin:96px 0 0 0;
+}
+@mixin h6_3750
+{
+    font-size:31px;
+}
+
+
+// MIXINS (FOR RESOLUTION 3751 -> ...)
+@mixin h4_Large
+{
+    font-size:57px;
+    margin:120px 0 0 0;
+}
+@mixin h6_Large
+{
+    font-size:38px;
+}
+
+
+// VARIABLES
+$background:#333333;
+$black:#000000;
+$button:#7f7f7f;
+$field:#f2f2f2;
+$white:#ffffff;
+
+
+// BODY
+body 
+{
+  overflow-x:hidden;
+  .mainContainer
+  {
+    @import "../Content/section";
+    background:$background;
+    width:100vw;
+
+    // INCLUDED MIXINS
+    h4 
+    {
+        @include h4;
+    }
+    h6
+    {
+        @include h6;
+    }
+
+  }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+  body {
+    .mainContainer {
+      h4 
+      {
+          @include h4_2400;
+      }
+      h6
+      {
+          @include h6_2400;
+      }
+    }
+  }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+  body {
+    .mainContainer {
+      h4 
+      {
+          @include h4_3000;
+      }
+      h6
+      {
+          @include h6_3000;
+      }
+    }
+  }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+  body {
+    .mainContainer {
+      h4 
+      {
+          @include h4_3750;
+      }
+      h6
+      {
+          @include h6_3750;
+      }
+    }
+  }
+}
+
+
+@media (min-width:3751px) 
+{
+  body {
+    .mainContainer {
+      h4 
+      {
+          @include h4_Large;
+      }
+      h6
+      {
+          @include h6_Large;
+      }
+    }
+  }
+}
